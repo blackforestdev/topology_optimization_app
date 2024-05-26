@@ -1,0 +1,5 @@
+numpy
+scipy
+PyQt5
+trimesh
+vtk
