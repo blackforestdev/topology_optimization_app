@@ -10,4 +10,7 @@ def main():
     sys.exit(app.exec_())  # Start the application event loop
 
 if __name__ == "__main__":
-    main()
+    app = QApplication(sys.argv)
+    window = TopologyOptimizationApp()
+    window.show()
+    sys.exit(app.exec_())
