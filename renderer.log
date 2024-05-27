@@ -1,0 +1,30 @@
+2024-05-27 03:52:02,329 - DEBUG - Original actor and mapper set up.
+2024-05-27 03:52:02,329 - DEBUG - Wireframe actor and mapper set up.
+2024-05-27 03:52:02,329 - DEBUG - Glyph actor and mapper set up.
+2024-05-27 03:52:02,329 - DEBUG - Mesh settings initialized.
+2024-05-27 03:52:02,329 - DEBUG - Dark theme set for renderer.
+2024-05-27 03:52:02,329 - DEBUG - Light 1 added to the renderer.
+2024-05-27 03:52:02,329 - DEBUG - Light 2 added to the renderer.
+2024-05-27 03:52:02,427 - DEBUG - Render window interactor started.
+2024-05-27 03:52:02,427 - DEBUG - Renderer initialized and render window created.
+2024-05-27 03:52:07,584 - DEBUG - Scene cleared.
+2024-05-27 03:52:07,584 - DEBUG - Attempting to load STL file from: /home/bfadmin/Documents/topology_optimization_app/extruder_body.stl
+2024-05-27 03:52:07,608 - DEBUG - Material properties applied to the actor.
+2024-05-27 03:52:07,608 - DEBUG - Actor position: (0.0, 0.0, 0.0)
+2024-05-27 03:52:07,609 - DEBUG - Actor scale: (1.0, 1.0, 1.0)
+2024-05-27 03:52:07,609 - DEBUG - Camera set to isometric view.
+2024-05-27 03:52:07,609 - DEBUG - Camera clipping range: (0.01, 1000.01)
+2024-05-27 03:52:07,609 - DEBUG - Camera view angle: 30.0
+2024-05-27 03:52:07,610 - DEBUG - Render window updated after setting isometric view.
+2024-05-27 03:52:07,610 - DEBUG - Camera reset and scene rendered.
+2024-05-27 03:52:07,610 - DEBUG - STL file loaded successfully
+2024-05-27 03:52:07,610 - DEBUG - Number of cells in STL: 36590
+2024-05-27 03:52:07,611 - DEBUG - Actor bounds: (-27.0, 35.75, -71.0, 23.5, -1.1102230246251565e-15, 27.0)
+2024-05-27 03:52:07,611 - DEBUG - Camera position: (100.0, 100.0, 100.0)
+2024-05-27 03:52:07,611 - DEBUG - Camera focal point: (0.0, 0.0, 0.0)
+2024-05-27 03:52:07,611 - DEBUG - Camera view up: (0.0, 0.0, 1.0)
+2024-05-27 03:52:07,647 - DEBUG - Render window updated.
+2024-05-27 03:52:09,332 - DEBUG - Camera reset and scene rendered.
+2024-05-27 03:52:20,850 - DEBUG - STL visibility toggled.
+2024-05-27 03:52:22,579 - DEBUG - STL visibility toggled.
+2024-05-27 03:52:23,981 - DEBUG - STL visibility toggled.

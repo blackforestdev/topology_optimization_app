@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QComboBox, QLineEdit, QDialog, QAction, QFileDialog, QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QVBoxLayout, QHBoxLayout, QLabel, QComboBox, QLineEdit, QDialog, QAction, QFileDialog, QMessageBox
 from vtkmodules.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
 from fea.material_properties import MaterialProperties
 from gui.settings_dialogs import MeshSettingsDialog, LoadInputDialog
@@ -152,6 +152,9 @@ class TopologyOptimizationApp(QMainWindow):
         load_settings_action.triggered.connect(self.openLoadPropertiesDialog)
         load_menu.addAction(load_settings_action)
         view_menu = menu_bar.addMenu("&View")
+        toggle_stl_action = QAction("Toggle &STL Visibility", self)
+        toggle_stl_action.triggered.connect(self.renderer.toggle_stl_visibility)
+        view_menu.addAction(toggle_stl_action)
         toggle_mesh_action = QAction("Toggle &Mesh Visibility", self)
         toggle_mesh_action.triggered.connect(self.renderer.toggle_mesh_visibility)
         view_menu.addAction(toggle_mesh_action)
