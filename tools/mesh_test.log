@@ -1,0 +1,550 @@
+2024-05-28 00:23:42,405 - DEBUG - Input polydata: vtkPolyData (0x595d62bb5350)
+  Debug: Off
+  Modified Time: 216
+  Reference Count: 2
+  Registered Events: (none)
+  Information: 0x595d62bb65a0
+  Data Released: False
+  Global Release Data: Off
+  UpdateTime: 217
+  Field Data:
+    Debug: Off
+    Modified Time: 173
+    Reference Count: 1
+    Registered Events: (none)
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+  Number Of Points: 24
+  Number Of Cells: 6
+  Cell Data:
+    Debug: Off
+    Modified Time: 181
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62b8f520)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62bb65f0
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: (none)
+    TCoords: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Point Data:
+    Debug: Off
+    Modified Time: 215
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62bbaea0)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62bb65f0
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 2
+    Array 0 name = Normals
+    Array 1 name = TCoords
+    Number Of Components: 5
+    Number Of Tuples: 24
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: 
+      Debug: Off
+      Modified Time: 196
+      Reference Count: 1
+      Registered Events: (none)
+      Name: Normals
+      Data type: float
+      Size: 105
+      MaxId: 71
+      NumberOfComponents: 3
+      Information: 0
+      Name: Normals
+      Number Of Components: 3
+      Number Of Tuples: 24
+      Size: 105
+      MaxId: 71
+      LookupTable: (none)
+    TCoords: 
+      Debug: Off
+      Modified Time: 200
+      Reference Count: 1
+      Registered Events: (none)
+      Name: TCoords
+      Data type: float
+      Size: 50
+      MaxId: 47
+      NumberOfComponents: 2
+      Information: 0
+      Name: TCoords
+      Number Of Components: 2
+      Number Of Tuples: 24
+      Size: 50
+      MaxId: 47
+      LookupTable: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Bounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, 0.5)
+  Compute Time: 229
+  Editable: false
+  Number Of Points: 24
+  Point Coordinates: 0x595d62bdeb00
+  PointLocator: 0
+  CellLocator: 0
+  Number Of Vertices: 0
+  Number Of Lines: 0
+  Number Of Polygons: 6
+  Number Of Triangle Strips: 0
+  Number Of Pieces: 1
+  Piece: 0
+  Ghost Level: 0
+  CellsBounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, 0.5)
+  CellsBounds Time: 230
+
+
+2024-05-28 00:23:42,406 - DEBUG - Number of points in input: 24
+2024-05-28 00:23:42,406 - DEBUG - Number of cells in input: 6
+2024-05-28 00:23:42,406 - DEBUG - Delaunay2D output: vtkPolyData (0x595d62be3550)
+  Debug: Off
+  Modified Time: 532
+  Reference Count: 2
+  Registered Events: (none)
+  Information: 0x595d62be2d10
+  Data Released: False
+  Global Release Data: Off
+  UpdateTime: 545
+  Field Data:
+    Debug: Off
+    Modified Time: 415
+    Reference Count: 1
+    Registered Events: (none)
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+  Number Of Points: 24
+  Number Of Cells: 2
+  Cell Data:
+    Debug: Off
+    Modified Time: 423
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62be3c80)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62be2f60
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: (none)
+    TCoords: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Point Data:
+    Debug: Off
+    Modified Time: 523
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62be3ac0)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62be2f60
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 2
+    Array 0 name = Normals
+    Array 1 name = TCoords
+    Number Of Components: 5
+    Number Of Tuples: 24
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: 
+      Debug: Off
+      Modified Time: 196
+      Reference Count: 2
+      Registered Events: (none)
+      Name: Normals
+      Data type: float
+      Size: 72
+      MaxId: 71
+      NumberOfComponents: 3
+      Information: 0
+      Name: Normals
+      Number Of Components: 3
+      Number Of Tuples: 24
+      Size: 72
+      MaxId: 71
+      LookupTable: (none)
+    TCoords: 
+      Debug: Off
+      Modified Time: 200
+      Reference Count: 2
+      Registered Events: (none)
+      Name: TCoords
+      Data type: float
+      Size: 48
+      MaxId: 47
+      NumberOfComponents: 2
+      Information: 0
+      Name: TCoords
+      Number Of Components: 2
+      Number Of Tuples: 24
+      Size: 48
+      MaxId: 47
+      LookupTable: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Bounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, 0.5)
+  Compute Time: 556
+  Editable: false
+  Number Of Points: 24
+  Point Coordinates: 0x595d62bdeb00
+  PointLocator: 0
+  CellLocator: 0
+  Number Of Vertices: 0
+  Number Of Lines: 0
+  Number Of Polygons: 2
+  Number Of Triangle Strips: 0
+  Number Of Pieces: 1
+  Piece: 0
+  Ghost Level: 0
+  CellsBounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, -0.5)
+  CellsBounds Time: 557
+
+
+2024-05-28 00:23:42,406 - DEBUG - Delaunay2D PolyData: vtkPolyData (0x595d62be3550)
+  Debug: Off
+  Modified Time: 532
+  Reference Count: 1
+  Registered Events: (none)
+  Information: 0x595d62be2d10
+  Data Released: False
+  Global Release Data: Off
+  UpdateTime: 545
+  Field Data:
+    Debug: Off
+    Modified Time: 415
+    Reference Count: 1
+    Registered Events: (none)
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+  Number Of Points: 24
+  Number Of Cells: 2
+  Cell Data:
+    Debug: Off
+    Modified Time: 423
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62be3c80)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62be2f60
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: (none)
+    TCoords: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Point Data:
+    Debug: Off
+    Modified Time: 523
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62be3ac0)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62be2f60
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 2
+    Array 0 name = Normals
+    Array 1 name = TCoords
+    Number Of Components: 5
+    Number Of Tuples: 24
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: 
+      Debug: Off
+      Modified Time: 196
+      Reference Count: 2
+      Registered Events: (none)
+      Name: Normals
+      Data type: float
+      Size: 72
+      MaxId: 71
+      NumberOfComponents: 3
+      Information: 0
+      Name: Normals
+      Number Of Components: 3
+      Number Of Tuples: 24
+      Size: 72
+      MaxId: 71
+      LookupTable: (none)
+    TCoords: 
+      Debug: Off
+      Modified Time: 200
+      Reference Count: 2
+      Registered Events: (none)
+      Name: TCoords
+      Data type: float
+      Size: 48
+      MaxId: 47
+      NumberOfComponents: 2
+      Information: 0
+      Name: TCoords
+      Number Of Components: 2
+      Number Of Tuples: 24
+      Size: 48
+      MaxId: 47
+      LookupTable: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Bounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, 0.5)
+  Compute Time: 556
+  Editable: false
+  Number Of Points: 24
+  Point Coordinates: 0x595d62bdeb00
+  PointLocator: 0
+  CellLocator: 0
+  Number Of Vertices: 0
+  Number Of Lines: 0
+  Number Of Polygons: 2
+  Number Of Triangle Strips: 0
+  Number Of Pieces: 1
+  Piece: 0
+  Ghost Level: 0
+  CellsBounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, -0.5)
+  CellsBounds Time: 557
+
+
+2024-05-28 00:23:42,406 - DEBUG - Delaunay2D output for Voronoi: vtkPolyData (0x595d62be4fc0)
+  Debug: Off
+  Modified Time: 862
+  Reference Count: 2
+  Registered Events: (none)
+  Information: 0x595d62be4db0
+  Data Released: False
+  Global Release Data: Off
+  UpdateTime: 875
+  Field Data:
+    Debug: Off
+    Modified Time: 745
+    Reference Count: 1
+    Registered Events: (none)
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+  Number Of Points: 24
+  Number Of Cells: 2
+  Cell Data:
+    Debug: Off
+    Modified Time: 753
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62be6380)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62be1dc0
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 0
+    Number Of Components: 0
+    Number Of Tuples: 0
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: (none)
+    TCoords: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Point Data:
+    Debug: Off
+    Modified Time: 853
+    Reference Count: 1
+    Registered Events: 
+      Registered Observers:
+        vtkObserver (0x595d62be6350)
+          Event: 33
+          EventName: ModifiedEvent
+          Command: 0x595d62be1dc0
+          Priority: 0
+          Tag: 1
+    Number Of Arrays: 2
+    Array 0 name = Normals
+    Array 1 name = TCoords
+    Number Of Components: 5
+    Number Of Tuples: 24
+    Copy Tuple Flags: ( 1 1 1 1 1 0 1 1 1 1 1 1 )
+    Interpolate Flags: ( 1 1 1 1 1 0 0 1 1 1 1 0 )
+    Pass Through Flags: ( 1 1 1 1 1 1 1 1 1 1 1 1 )
+    Scalars: (none)
+    Vectors: (none)
+    Normals: 
+      Debug: Off
+      Modified Time: 196
+      Reference Count: 3
+      Registered Events: (none)
+      Name: Normals
+      Data type: float
+      Size: 72
+      MaxId: 71
+      NumberOfComponents: 3
+      Information: 0
+      Name: Normals
+      Number Of Components: 3
+      Number Of Tuples: 24
+      Size: 72
+      MaxId: 71
+      LookupTable: (none)
+    TCoords: 
+      Debug: Off
+      Modified Time: 200
+      Reference Count: 3
+      Registered Events: (none)
+      Name: TCoords
+      Data type: float
+      Size: 48
+      MaxId: 47
+      NumberOfComponents: 2
+      Information: 0
+      Name: TCoords
+      Number Of Components: 2
+      Number Of Tuples: 24
+      Size: 48
+      MaxId: 47
+      LookupTable: (none)
+    Tensors: (none)
+    GlobalIds: (none)
+    PedigreeIds: (none)
+    EdgeFlag: (none)
+    Tangents: (none)
+    RationalWeights: (none)
+    HigherOrderDegrees: (none)
+    ProcessIds: (none)
+  Bounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, 0.5)
+  Compute Time: 886
+  Editable: false
+  Number Of Points: 24
+  Point Coordinates: 0x595d62bdeb00
+  PointLocator: 0
+  CellLocator: 0
+  Number Of Vertices: 0
+  Number Of Lines: 0
+  Number Of Polygons: 2
+  Number Of Triangle Strips: 0
+  Number Of Pieces: 1
+  Piece: 0
+  Ghost Level: 0
+  CellsBounds: 
+    Xmin,Xmax: (-0.5, 0.5)
+    Ymin,Ymax: (-0.5, 0.5)
+    Zmin,Zmax: (-0.5, -0.5)
+  CellsBounds Time: 887
+
+

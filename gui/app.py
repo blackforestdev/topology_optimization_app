@@ -195,7 +195,8 @@ class TopologyOptimizationApp(QMainWindow):
         dialog = MeshSettingsDialog(self)
         if dialog.exec_():
             settings = dialog.getSettings()
-            self.renderer.set_mesh_settings(settings)
+            #self.renderer.set_mesh_settings(settings)
+            self.renderer.mesh_settings = settings
             self.renderer.generate_mesh()
 
 if __name__ == "__main__":
