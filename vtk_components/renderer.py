@@ -33,13 +33,13 @@ class Renderer:
         self.glyph_mapper = vtk.vtkPolyDataMapper()
 
         self.sphere_source = vtk.vtkSphereSource()
-        self.sphere_source.SetRadius(0.1)  # Set the radius of the spheres
+        self.sphere_source.SetRadius(0.5)  # Set the radius of the spheres
         self.glyph3D = vtk.vtkGlyph3D()
         self.glyph3D.SetSourceConnection(self.sphere_source.GetOutputPort())
         self.glyph_mapper = vtk.vtkPolyDataMapper()
         self.glyph_actor = vtk.vtkActor()
         self.glyph_actor.SetMapper(self.glyph_mapper)
-        self.glyph_actor.GetProperty().SetColor(0.3, 0.7, 0.6)  # Blue color for nodes
+        self.glyph_actor.GetProperty().SetColor(0, 0, 1)  # Blue color for nodes
         self.renderer.AddActor(self.glyph_actor)
 
     def load_stl(self, file_path):
@@ -60,7 +60,7 @@ class Renderer:
         logging.debug("STL file loaded successfully")
 
         # Set initial properties for the actor
-        self.original_actor.GetProperty().SetColor(0.8, 0.8, 0.8)  # Red color
+        self.original_actor.GetProperty().SetColor(1.0, 0.0, 0.0)  # Red color
         self.original_actor.GetProperty().SetOpacity(1.0)  # Fully opaque
 
         logging.debug(f"Actor visibility: {self.original_actor.GetVisibility()}")
@@ -132,7 +132,7 @@ class Renderer:
         self.wireframe_actor.SetMapper(self.wireframe_mapper)
         self.wireframe_actor.GetProperty().SetRepresentationToWireframe()
         self.wireframe_actor.GetProperty().SetColor(0, 0, 0)  # Black color for wireframe
-        self.wireframe_actor.GetProperty().SetLineWidth(5)  # Line weight
+        self.wireframe_actor.GetProperty().SetLineWidth(2)  # Line weight
 
         # Extract points for glyphs
         points = polydata.GetPoints()
@@ -144,7 +144,7 @@ class Renderer:
         self.glyph_mapper.SetInputConnection(self.glyph3D.GetOutputPort())
 
         self.glyph_actor.SetMapper(self.glyph_mapper)
-        self.glyph_actor.GetProperty().SetColor(0.3, 0.7, 0.6)  # Blue color for nodes
+        self.glyph_actor.GetProperty().SetColor(0, 0, 1)  # Blue color for nodes
 
         logging.debug("Mesh and glyphs updated")
         
@@ -176,39 +176,56 @@ class Renderer:
             algorithm = self.mesh_settings.get("algorithm", "Delaunay")  # Default to Delaunay if algorithm is not specified
             resolution = self.mesh_settings.get("resolution", 5)  # Default resolution to 5 if not specified
 
-            # Placeholder mesh generation using VTK's Delaunay algorithm
             if algorithm == "Delaunay":
                 delaunay = vtk.vtkDelaunay2D()
-                delaunay.SetInputData(self.original_mapper.GetInput())  # Corrected input connection
-                delaunay.SetAlpha(resolution)  # Set alpha parameter for Delaunay
+                delaunay.SetInputData(self.original_mapper.GetInput())
+                delaunay.SetAlpha(resolution)
                 delaunay.Update()
-
                 polydata = delaunay.GetOutput()
-                self.update_mesh(polydata)  # Update the mesh with the generated Delaunay mesh
 
-                # For debugging purposes, let's print a message indicating successful mesh generation
-                logging.debug(f"Mesh Algorithm: {algorithm}, Resolution: {resolution}")
-                logging.debug("Mesh generated successfully.")
-                logging.debug(f"Number of points in generated mesh: {polydata.GetNumberOfPoints()}")
-                logging.debug(f"Number of cells in generated mesh: {polydata.GetNumberOfCells()}")
+            elif algorithm == "Voronoi":
+                # Ensure correct input data type
+                delaunay = vtk.vtkDelaunay2D()
+                delaunay.SetInputData(self.original_mapper.GetInput())
+                delaunay.Update()
+                polydata = delaunay.GetOutput()
+                voronoi = vtk.vtkVoronoi2D()
+                voronoi.SetInputData(polydata)
+                voronoi.Update()
+                polydata = voronoi.GetOutput()
+
+            elif algorithm == "Tetrahedral":
+                # Ensure correct input data type
+                tetrahedral = vtk.vtkDelaunay3D()
+                tetrahedral.SetInputData(self.original_mapper.GetInput())
+                tetrahedral.SetAlpha(resolution)
+                tetrahedral.Update()
+                polydata = self.convert_unstructured_grid_to_polydata(tetrahedral.GetOutput())
+
+            else:
+                logging.error(f"Unknown mesh algorithm: {algorithm}")
+                return
+
+            self.update_mesh(polydata)
+            logging.debug(f"Mesh Algorithm: {algorithm}, Resolution: {resolution}")
+            logging.debug("Mesh generated successfully.")
+            logging.debug(f"Number of points in generated mesh: {polydata.GetNumberOfPoints()}")
+            logging.debug(f"Number of cells in generated mesh: {polydata.GetNumberOfCells()}")
 
         except Exception as e:
-            # Print any exceptions that occur during mesh generation
             logging.error(f"Error during mesh generation: {str(e)}")
-
+                      
     def toggle_mesh_visibility(self):
-        # Toggle visibility of the wireframe mesh
         is_visible = self.wireframe_actor.GetVisibility()
         self.wireframe_actor.SetVisibility(not is_visible)
         self.vtk_frame.Render()
         logging.debug("Wireframe visibility toggled.")
 
     def toggle_nodes_visibility(self):
-        # Toggle visibility of the nodes
         is_visible = self.glyph_actor.GetVisibility()
         self.glyph_actor.SetVisibility(not is_visible)
         self.vtk_frame.Render()
-        logging.debug("Node visibility toggled.")
+        logging.debug("Nodes visibility toggled.")
 
     def apply_material_properties(self, actor):
         # Implement your material properties here
