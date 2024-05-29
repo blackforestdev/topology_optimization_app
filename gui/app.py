@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QPushButton, QVBoxLayout, QHBoxLayout, QLabel, QComboBox, QLineEdit, QDialog, QAction, QFileDialog, QMessageBox
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QWidget, QVBoxLayout, QHBoxLayout, QLabel, QComboBox, QLineEdit, QDialog, QAction, QFileDialog, QMessageBox
 from vtkmodules.qt.QVTKRenderWindowInteractor import QVTKRenderWindowInteractor
 from fea.material_properties import MaterialProperties
 from gui.settings_dialogs import MeshSettingsDialog, LoadInputDialog
@@ -195,8 +195,7 @@ class TopologyOptimizationApp(QMainWindow):
         dialog = MeshSettingsDialog(self)
         if dialog.exec_():
             settings = dialog.getSettings()
-            #self.renderer.set_mesh_settings(settings)
-            self.renderer.mesh_settings = settings
+            self.renderer.set_mesh_settings(settings['algorithm'], settings['resolution'])
             self.renderer.generate_mesh()
 
 if __name__ == "__main__":
