@@ -9,6 +9,7 @@ class TopologyOptimizationApp(QMainWindow):
         super().__init__()
         self.setWindowTitle("Topology Optimization App")
         self.setGeometry(100, 100, 1200, 800)
+        self.showMaximized()
 
         self.material_properties = {"color": (1.0, 0.0, 0.0), "opacity": 1.0}
 
